@@ -13,8 +13,11 @@ Desarrolla una herramienta de consola 📟 que automatice la auditoría de venta
 **Requerimientos del Sistema (Reglas de Negocio) 📜⚙️:**
 
 1. **Panel Principal 🎛️:** El programa debe arrancar mostrando un menú de opciones 📑 (1. Auditar Facturas 🧾, 2. Calculadora de Impuestos 🧮, 3. Cerrar Turno 🚪). Este panel debe garantizar que se muestre al menos una vez al abrir el programa 🚀 y debe mantenerse activo 🔄, reapareciendo después de cada operación, hasta que el empleado seleccione la opción de "Cerrar Turno" 🛑.
+   
 2. **Módulo de Auditoría (Opción 1) 🔍💰:** El sistema debe preguntar cuántas facturas se emitieron durante el día 🔢. Con base en ese número exacto 🎯, el programa solicitará de manera secuencial y estructurada el total cobrado en cada una de esas facturas 💸, sumándolas en tiempo real ⏱️ para emitir el corte de caja total 🏦 al terminar el conteo ✅.
-3. **Módulo de Impuestos (Opción 2) 📈:** El sistema solicitará el precio bruto 🪙 de un componente. 
+   
+3. **Módulo de Impuestos (Opción 2) 📈:** El sistema solicitará el precio bruto 🪙 de un componente.
+   
 4. **Restricción de Arquitectura (Cálculo de Impuestos) 🚧🏗️:** Por políticas de calidad de software 🏆, la operación matemática para calcular el IVA (16%) está estrictamente prohibida 🚫 dentro del bloque principal del menú. Debes construir un **módulo o subrutina independiente** 📦🔧 que reciba el precio bruto ingresado 📥, calcule el precio neto (precio + IVA) 🧮 y le devuelva ese resultado final 📤 al sistema principal para que este lo muestre en pantalla 🖥️✨.
 
 ### 📤 Salida Esperada 🎯

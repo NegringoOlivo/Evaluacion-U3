@@ -1,0 +1,18 @@
+{
+"image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // 🚫 Desactiva el autocompletado en línea de GitHub Copilot para todos los lenguajes
+        "github.copilot.enable": {
+          "*": false
+        },
+        // 💬 Oculta el panel de ayuda y el ícono de Chat del centro de comandos superior
+        "chat.commandCenter.enabled": false,
+        // 🪟 Evita que se abra la pestaña de "Bienvenida/Ayuda" al iniciar el contenedor
+        "workbench.startupEditor": "none"
+      }
+    }
+  }
+}
